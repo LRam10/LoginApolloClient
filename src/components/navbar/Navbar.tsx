@@ -4,7 +4,7 @@ import {Toolbar } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/";
-
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
