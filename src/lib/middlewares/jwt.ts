@@ -7,7 +7,6 @@ const { security: { secretKey } } = config;
 
 export const jwtVerify = (accessToken: any, cb: any): void => {
     jwt.verify(accessToken, secretKey, (error: any, accessTokenData: any = {}) => {
-        console.log(error)
         const { data: user } = accessTokenData;
         if (error || !user) return cb(false);
 
